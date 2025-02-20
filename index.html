@@ -34,9 +34,9 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero fade-in">
             <div class="container">
-                <h2>Building Intelligent Solutions with Data & Code</h2>
+                <h2 class="text-gradient">Building Intelligent Solutions with Data & Code</h2>
                 <p>
                     Specializing in <strong>AI, software engineering, and automation</strong>,
                     transforming complex problems into scalable solutions.
@@ -46,7 +46,7 @@
         </section>
 
         <!-- About Me -->
-        <section class="intro">
+        <section class="intro fade-in delay-1">
             <div class="container">
                 <h2>Who Am I?</h2>
                 <p>
@@ -57,7 +57,7 @@
         </section>
 
         <!-- Skills & Expertise -->
-        <section class="skills">
+        <section class="skills fade-in delay-2">
             <div class="container">
                 <h2>My Technical Stack</h2>
                 <div class="skills-grid">
@@ -82,7 +82,7 @@
         </section>
 
         <!-- Featured Projects -->
-        <section class="featured-projects">
+        <section class="featured-projects fade-in delay-3">
             <div class="container">
                 <h2>Recent Work</h2>
                 <div class="projects-grid">
@@ -109,7 +109,7 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="cta">
+        <section class="cta fade-in delay-4">
             <div class="container">
                 <h2>Let's Innovate Together</h2>
                 <p>
@@ -125,5 +125,86 @@
             <p>© 2024 Waithaka Mundia | <a href="contact.html">Contact Me</a></p>
         </div>
     </footer>
+
+    <!-- Particles.js Script (for Hero Section background) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS("hero", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#3b82f6"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#fff"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 5,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#3b82f6",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 </html>
