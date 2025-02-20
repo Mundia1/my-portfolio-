@@ -20,85 +20,136 @@
 
     <!-- 🔹 Navigation Bar -->
     <header>
-        <h1>My Projects</h1>
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>My Projects</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <!-- 🔹 Project Filtering -->
+        <section class="project-filter fade-in">
+            <div class="container">
+                <h2>Explore My Work</h2>
+                <p>Filter projects by category:</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI & Data Science</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                </div>
+            </div>
+        </section>
+
         <!-- 🔹 Projects Section -->
-        <section class="projects">
-            <h2>Highlighted Projects</h2>
-            <p class="projects-intro">
-                Here are some of my most recent and impactful projects,  
-                showcasing my expertise in **AI, software engineering, and data science**.
-            </p>
+        <section class="projects fade-in delay-1">
+            <div class="container">
+                <h2>Highlighted Projects</h2>
+                <p class="projects-intro">
+                    Here are some of my most recent and impactful projects,  
+                    showcasing my expertise in **AI, software engineering, and data science**.
+                </p>
 
-            <div class="projects-grid">
+                <div class="projects-grid">
 
-                <div class="project">
-                    <img src="images/chatbot-project.webp" alt="AI Chatbot" class="project-img">
-                    <div class="project-info">
-                        <h3>AI Chatbot</h3>
-                        <p>
-                            Designed and developed an **AI-powered chatbot** using **Python & NLP**,  
-                            capable of real-time conversations and automation.  
-                            Used in customer support to improve response efficiency by **80%**.
-                        </p>
-                        <a href="#" class="btn">View Project</a>
+                    <div class="project" data-category="ai">
+                        <img src="images/chatbot-project.webp" alt="AI Chatbot" class="project-img">
+                        <div class="project-info">
+                            <h3>AI Chatbot</h3>
+                            <p><strong>Problem:</strong> Customer service inefficiencies.</p>
+                            <p><strong>Solution:</strong> AI chatbot built with **Python & NLP** to automate responses.</p>
+                            <p><strong>Result:</strong> Reduced response time by **80%**, improving customer satisfaction.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-outlined">GitHub</a>
+                                <a href="#" class="btn">Live Demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project">
-                    <img src="images/data-dashboard.webp" alt="Data Dashboard" class="project-img">
-                    <div class="project-info">
-                        <h3>Data Visualization Dashboard</h3>
-                        <p>
-                            Built a **real-time analytics dashboard** using **React.js & D3.js**,  
-                            providing **interactive visual insights** for business decision-making.  
-                            Integrated with APIs to pull live data.
-                        </p>
-                        <a href="#" class="btn">View Project</a>
+                    <div class="project" data-category="web">
+                        <img src="images/data-dashboard.webp" alt="Data Dashboard" class="project-img">
+                        <div class="project-info">
+                            <h3>Data Visualization Dashboard</h3>
+                            <p><strong>Problem:</strong> Lack of real-time data insights.</p>
+                            <p><strong>Solution:</strong> Built a dashboard using **React.js & D3.js** with real-time API integration.</p>
+                            <p><strong>Result:</strong> Provided interactive data visualizations for business analytics.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-outlined">GitHub</a>
+                                <a href="#" class="btn">Live Demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project">
-                    <img src="images/automation-tool.webp" alt="AI Task Automation" class="project-img">
-                    <div class="project-info">
-                        <h3>AI-Powered Task Automation</h3>
-                        <p>
-                            Developed an **automation tool** leveraging **Python, AI, and cloud computing**,  
-                            reducing manual workload and increasing operational efficiency by **50%**.
-                        </p>
-                        <a href="#" class="btn">View Project</a>
+                    <div class="project" data-category="automation">
+                        <img src="images/automation-tool.webp" alt="AI Task Automation" class="project-img">
+                        <div class="project-info">
+                            <h3>AI-Powered Task Automation</h3>
+                            <p><strong>Problem:</strong> Repetitive manual tasks slowing workflow.</p>
+                            <p><strong>Solution:</strong> Developed an AI-driven **Python automation tool** using cloud computing.</p>
+                            <p><strong>Result:</strong> Increased efficiency by **50%**, reducing operational workload.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-outlined">GitHub</a>
+                                <a href="#" class="btn">Live Demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </section>
 
         <!-- 🔹 Call to Action -->
-        <section class="cta">
-            <h2>Have a Project Idea?</h2>
-            <p>
-                Let's collaborate and bring your **AI, software, or automation ideas** to life.  
-                Whether it's building **scalable web applications** or designing **AI-powered solutions**,  
-                I'm excited to work on innovative projects.
-            </p>
-            <a href="contact.html" class="btn">Get in Touch</a>
+        <section class="cta fade-in delay-2">
+            <div class="container">
+                <h2>Have a Project Idea?</h2>
+                <p>
+                    Let's collaborate and bring your **AI, software, or automation ideas** to life.  
+                    Whether it's building **scalable web applications** or designing **AI-powered solutions**,  
+                    I'm excited to work on innovative projects.
+                </p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </div>
         </section>
     </main>
 
     <!-- 🔹 Footer -->
     <footer>
-        <p>© 2024 Waithaka Mundia | <a href="contact.html">Contact Me</a></p>
+        <div class="container">
+            <p>© 2024 Waithaka Mundia | <a href="contact.html">Contact Me</a></p>
+        </div>
     </footer>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const projects = document.querySelectorAll(".project");
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const category = button.dataset.filter;
+                    
+                    filterButtons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+
+                    projects.forEach(project => {
+                        if (category === "all" || project.dataset.category === category) {
+                            project.style.display = "block";
+                        } else {
+                            project.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
