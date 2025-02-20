@@ -20,21 +20,23 @@
 
     <!-- 🔹 Navigation Bar -->
     <header>
-        <h1>Contact Me</h1>
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- 🔹 Contact Section -->
-        <section class="contact">
-            <div class="contact-container">
+        <section class="contact fade-in">
+            <div class="container">
                 <h2>Let's Work Together</h2>
                 <p>
                     Have a project idea, an opportunity, or just want to connect?  
@@ -44,17 +46,62 @@
                 <div class="contact-info">
                     <p>📞 <strong>Phone:</strong> <a href="tel:+254769470636">+254 769 470 636</a></p>
                     <p>📧 <strong>Email:</strong> <a href="mailto:waithaka.mundia@gmail.com">waithaka.mundia@gmail.com</a></p>
-                    <p>🔗 <strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/waithaka-mundia</a></p>
+                    <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/waithaka-mundia" target="_blank">linkedin.com/in/waithaka-mundia</a></p>
                 </div>
+
+                <form action="mailto:waithaka.mundia@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <h3>Send a Message</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
 
                 <a href="mailto:waithaka.mundia@gmail.com" class="btn">Send an Email</a>
             </div>
         </section>
+
+        <!-- 🔹 New Section: Availability & Work Preferences -->
+        <section class="availability fade-in delay-1">
+            <div class="container">
+                <h2>Availability & Work Preferences</h2>
+                <p>
+                    I’m open to new opportunities! Here’s how I prefer to work:
+                </p>
+                <div class="availability-grid">
+                    <div class="availability-item">
+                        <h3>🕒 Availability</h3>
+                        <p>Open for freelance, contract, and full-time opportunities.</p>
+                    </div>
+                    <div class="availability-item">
+                        <h3>🌍 Work Mode</h3>
+                        <p>Prefer **remote-first**, but open to hybrid & on-site roles.</p>
+                    </div>
+                    <div class="availability-item">
+                        <h3>💡 Project Types</h3>
+                        <p>AI solutions, automation, web applications, and cloud projects.</p>
+                    </div>
+                    <div class="availability-item">
+                        <h3>📆 Preferred Collaboration</h3>
+                        <p>Agile teams, startups, and enterprise-level projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- 🔹 Footer -->
     <footer>
-        <p>© 2024 Waithaka Mundia | <a href="contact.html">Contact Me</a></p>
+        <div class="container">
+            <p>© 2024 Waithaka Mundia | <a href="contact.html">Contact Me</a></p>
+        </div>
     </footer>
 
 </body>
